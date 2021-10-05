@@ -1,0 +1,78 @@
+@import url('https://use.typekit.net/huh0ewf.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: adobe-garamond-pro, serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.cardBox{
+    display: flex;
+    padding: 5vh 5vw;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.card :hover {
+    box-shadow: 0 2px 18px black;
+    transition: .3s;
+}
+
+.card{
+    height: 320px;
+    width: 230px;
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.dishName{
+    font-size: 2.625em;
+    line-height: 1.1em;
+    transition: .3s;
+    transform:translate(0, -30px);
+}
+
+.cardBox :hover .dishName{
+    transform: translate(0, -70px);
+    font-size: 2em;
+    line-height: 1em;
+    transition: .3s;
+}
+
+.startCooking{
+    position: absolute;
+    /* margin: 10px 0; */
+    padding: 25px;
+    background-image: url(../svg/Rectangle\ 1-1.svg);
+    background-size: 100%;
+    background-position: 0;
+    background-repeat: no-repeat;
+    transform: translate(-220px, 0);
+    transition: .3s;
+}
+
+.cardBox :hover > .startCooking{
+    transform: translate(-15px, 0);
+}
+
+.startCooking h2{
+    font-size: 1.2em;
+    text-align: center;
+    transform: translate(-5px);
+}

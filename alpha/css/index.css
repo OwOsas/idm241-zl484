@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+p{
+    font-size: 1.2em;
+}
+
+.header{
+    height: 10vh;
+    width: 100vw;
+    box-shadow: black;
+    margin-bottom: 3vh;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.demoBanner{
+    width: 100vw;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 10vh;
+    display: flex;
+    align-content: center;
+    flex-flow: column;
+    padding: 2vh 2vw;
+}
+
+.demoBanner img{
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+}
+
+.demoBanner h1{
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    width: auto;
+    height: 500px;
+    padding: 4vh 4vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10vh;
+    /* background-color: black; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+}
+
+.cardImg{
+    width: 700px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+.cardText{
+    max-width: 700px;
+}
+
+#cardImg_1{
+    background-image: url(../img/Frame_1.png);
+}
+
+#cardImg_1:hover{
+    background-image: url(../img/Frame_2.png);
+}
+
+#cardImg_1{
+    background-image: url(../img/Frame_1.png);
+}
+
+#cardImg_1:hover{
+    background-image: url(../img/Frame_2.png);
+}
+
+#cardImg_2{
+    background-image: url(../img/Frame_2.png);
+}
+
+#cardImg_2:hover{
+    background-image: url(../img/Frame\ _3.png);
+}
+
+#cardImg_3{
+    background-image: url(../img/Frame\ _3.png);
+}
+
+#cardImg_3:hover{
+    background-image: url(../img/Frame\ _4.png);
+}
+
+#cardImg_4{
+    background-image: url(../img/Frame\ _4.png);
+}
+
+#cardImg_4:hover{
+    background-image: url(../img/Frame\ _5.png);
+}
+
+
+#cardImg_5{
+    background-image: url(../img/Frame\ _5.png);
+}
+
+#cardImg_5:hover{
+    background-image: url(../img/Frame_1.png);
+}
+
+.footer{
+    height: 10vh;
+    width: 100vw;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 20%);
+}
