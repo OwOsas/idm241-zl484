@@ -31,9 +31,10 @@ h1{
 .container{
     display: grid;
     grid-template-columns: 1.2fr 2fr;
+    min-height: 80vh;
 }
 
-.discription{
+.description{
     padding: 1vh 0 1vh 5vw;
     align-self: center;
 }
@@ -54,10 +55,13 @@ h1{
     background-color: black;
     padding: 3vh 7vw;
     margin-top: 3vh;
+    min-height: 10vh;
+    display: flex;
 }
 
 .footer a{
     color: white;
+    align-self: center;
 }
 
 @media screen and (max-width: 800px) {
