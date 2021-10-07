@@ -24,7 +24,6 @@
 
 .card_bg{
     position: absolute;
-    background-image: url('../img/ESOR_KwamaEggQuich_img.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: inherit;
