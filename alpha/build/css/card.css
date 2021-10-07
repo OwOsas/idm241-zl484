@@ -1,0 +1,116 @@
+@import url('https://use.typekit.net/pwu0lro.css');
+
+@font-face {
+    font-family: "trajan";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TrajanPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "trajan";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/TrajanPro-Bold.otf");
+}
+
+.card{
+    /* background-color: yellow; */
+    height: 23.5rem;
+    width: 17rem;
+
+    position: relative;
+}
+
+.card_bg{
+    position: absolute;
+    background-image: url('../img/ESOR_KwamaEggQuich_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    box-shadow: 5px 0 6px rgba(0, 0, 0, 0);
+
+    transition: .25s;
+}
+
+.card_bg h1{
+    position: absolute;
+    top: 0;
+    margin: 1rem;
+
+    font-family: trajan, trajan-pro-3, Garamond;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 2.625em;
+}
+
+.card_bk{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-color: white;
+    box-shadow: 5px 0 6px rgba(0, 0, 0, 0);
+    transition: .25s;
+}
+
+.arrow_container{
+    position: absolute;
+    right: 0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    transition: .25s;
+}
+
+.arrow{
+    margin: auto;
+    right: 1em;
+    height: 15%;
+    width: 3px;
+    background-color: #9D9D9D;
+    transform: translate(0, 50%);
+}
+
+.arrow:after{
+    content: '';
+    background-color: #9D9D9D;
+    position: absolute;
+    height: 100%;
+    z-index: 4;
+    width: 3px;
+    transform: translate(0, -100%);
+}
+
+.card:hover > .card_bg{
+    transform: translate(0, -7px);
+}
+
+.card:hover > .card_bk{
+    transform: translate(15%, 0);
+    box-shadow: 5px 4px 12px 3px rgba(0, 0, 0, 0.10);
+}
+
+.card:hover > .arrow_container{
+    transform: translate(95%, 0);
+}
+
+.card_bk:hover{
+    background-color: yellow;
+
+}
+
+.card_bk_active{
+    transform: translate(200px, 0);
+    width: 200%;
+}
+
+.card:hover > .card_bg{
+    box-shadow: 5px 0 6px rgba(0, 0, 0, 0.25);
+    transition: .25s;
+}
+
+.card_content{
+    opacity: 0;
+}
