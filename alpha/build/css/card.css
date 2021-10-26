@@ -82,6 +82,10 @@
     transform: translate(0, -100%);
 }
 
+.card:hover{
+    cursor: pointer;
+}
+
 .card:hover > .card_bg{
     transform: translate(0, -7px);
 }
@@ -96,7 +100,6 @@
 }
 
 /* .card_bk:hover{
-    background-color: yellow;
 
 } */
 
