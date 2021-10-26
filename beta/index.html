@@ -9,58 +9,34 @@
     <link rel="stylesheet" href="./css/card.css">
 </head>
 <body>
-    <div class="header">
-        <h1>IDM-241 Alpha Build</h1>
+    <div class="header">IDM-241 Alpha Build
+        <div class="header_deco"></div>
     </div>
 
     <div class="container">
-        <!-- <div class="description">
-            <h2>Trigger</h2>
-            <p>Hover</p>
-            <h2>Rules</h2>
+        
+        <div class="description">
+            <h2>Triggers: </h2>
+            <p>Hover, click</p>
+            <h2>Rules:</h2>
             <ul>
-                <li>On hover, the card move up a few pixels;</li>
-                <li>A white card and a grey vertical straight line move from behind to the right;</li>
-                <li>Increase drop shadow on both the card with the image and the white card;</li>
-            </ul> -->
+                <li>When hover on the card, the content preview container that's hidden behind the image moves to the right, revealing a grey vertical line;</li>
+                <li>Then when hover on the area that just has been revealed, the grey line transforms into an arrow pointing towards the right;</li>
+                <li>When the user clicks on the arrow, the content container fully reveals itself, showing user the tags, the Key ingredients, and the cost of time. The difficulty will also increases it's opacity and reveals itself at the middle-bottom of the image;</li>
+                <li>During this time, the arrow will transforms back to the grey vertical line;</li>
+                <li>Then when the user hovers over the grey vertical line once again, the line will transforms into an arrow pointing towards the left;</li>
+                <li>When the user clicks on the arrow, the content container retracts, and hides itself under the image once again along with the arrow that has transformed back to a grey vertical line;</li>
+            </ul>
 
-            <!-- <p>The card move up a few pixel;
-                <br>
-                A white card and a straight line move from underneath to the right;
-                <br>
-                Increase drop shadow on both the card with the image and the white card;
-                <br><br>
-                When hovered on the white rectangular region with the straight line, <br> the straight line transform into an arrow pointing towards right;
-                <br><br>
-                When click on the arrow, the white card expand and reveal detailed information;
-                <br><br>
-                When hovered on the white rectangular region with the straight line, the straight line transform into an arrow pointing towards left;
-                <br><br>
-            </p> -->
-
-            <!-- <h2>Feedback</h2>
+            <h2>Feedbacks:</h2>
             <p>Same as rules</p>
-            <h2>Loop</h2>
-            <p>None</p> -->
-        <!-- </div> -->
-
-        <div class="card">
-            <div class="card_bk">
-                <div class="card_content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo amet harum tempore. A quod hic rerum veritatis iste similique tenetur esse quibusdam aperiam voluptatum suscipit inventore commodi aspernatur aut, neque explicabo doloremque officiis? Atque consectetur veniam dignissimos modi tempora odio architecto culpa voluptas hic error exercitationem, et porro voluptate.
-                </div>
-            </div>
-
-            <div class="arrow_container">
-                <div class="arrow"></div>
-                <div class="arrow_2"></div>
-            </div>
-
-      
-            <div class="card_bg" style="background-image: url('./img/ESOR_KwamaEggQuich_img.jpg');">
-                <h1>KWAMA <br>EGG <br>QUICHE</h1>
-            </div>
+            <h2>Loops:</h2>
+            <p>None</p>
         </div>
+
+        <img src="./img/flow.gif" alt="">
+
+        
     </div>
 
 
