@@ -83,7 +83,7 @@ h2{
 
 
 .footer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.383);
     padding: 3vh 7vw;
     margin-top: 3vh;
     min-height: 10vh;
