@@ -1,3 +1,19 @@
+@import url('https://use.typekit.net/pwu0lro.css');
+
+@font-face {
+    font-family: "trajan";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TrajanPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "trajan";
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/TrajanPro-Bold.otf");
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,52 +21,69 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-li, p{
+.description li, .description p{
     font-size: 1.1em;
     line-height: 1.2em;
-    margin: 0 .8em;
+    margin: .5rem 0 .5rem 1.25em;
     margin-bottom: 1em;
+
 }
 
-h2{
+.description h2{
+    font-family: trajan;
     line-height: 1.7em;
     color: white;
 }
 
-h1{
-    color: white;
-}
 
 body{
     background-color: #121212;
 }
 
-
 .header{
-    height: auto;
-    margin: 3vh 5vw 0 5vw;
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+    font-family: trajan;
+    font-weight: bold;
+    color: white;
+}
+
+.header_deco{
+    background-image: url(../img/header_deco.svg);
+    height: 1rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1.2fr 2fr;
-    min-height: 80vh;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vw;
+    
+}
+
+.container img{
+    border: 2px rgba(255, 255, 255, 0.3) solid;
+    width: 100%;
+    margin-top: min(7vh, 5vw);
 }
 
 .description{
-    padding: 1vh 0 1vh 5vw;
-    align-self: center;
+    margin-right: 5rem;
+    color: white;
 }
 
-.card{
-    max-width: 66vw;
-    max-height: 80vh;
-    align-self: center;
-    justify-self: center;
+.description h2{
+    border-bottom: 2px #88773A solid;
+    margin-bottom: 1rem;
 }
+
+
 
 .footer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.383);
     padding: 3vh 7vw;
     margin-top: 3vh;
     min-height: 10vh;
@@ -62,16 +95,20 @@ body{
     align-self: center;
 }
 
-@media screen and (max-width: 800px) {
-    .header{
-        margin: 2vh 5vw;
-    }
+.card{
+    justify-self: center;
+    align-self: center;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width: 1000px) {
     .container{
         grid-template-columns: 1fr;
     }
 
-    .discription{
-        padding: 0 7vw;
+    .description{
+        padding: 5vh 5vw;
+        margin: 0;
     }
 
     .container img{
