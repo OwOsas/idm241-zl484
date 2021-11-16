@@ -143,22 +143,22 @@
 }
 
 .arrow_active{
-    transform: rotate(-10deg) translateY(2%);
+    transform: rotate(-10deg) translateY(1%);
     background-color: #bea136;
 }
 
 .arrow_2_active{
-    transform: rotate(10deg) translateY(-2%);
+    transform: rotate(10deg) translateY(-1%);
     background-color: #bea136;
 }
 
 .arrow_active_reverse{
-    transform: rotate(10deg) translateY(2%);
+    transform: rotate(10deg) translateY(1%);
     background-color: #bea136;
 }
 
 .arrow_2_active_reverse{
-    transform: rotate(-10deg) translateY(-2%);
+    transform: rotate(-10deg) translateY(-1%);
     background-color: #bea136;
 }
 

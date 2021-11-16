@@ -111,11 +111,7 @@ body{
         margin: 0;
     }
 
-    .container img{
-        position: relative;
-        max-width: 100vw;
-        top: 0;
-        margin: auto;
+    .card{
         order: -1;
     }
 }   
