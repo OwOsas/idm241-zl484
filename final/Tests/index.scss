@@ -1,0 +1,186 @@
+/* ***** Colors - Start ***** */
+$black: #111;
+$light-black: #242224;
+$blue: #1b2f69;
+$light-blue: #27408f;
+$white: #fff;
+$light-white: #dae4ee;
+/* ***** Colors - End ***** */
+
+/* ***** Dimensions - Start ***** */
+$card-stack-width: 300px;
+$card-stack-height: 550px;
+$card-width: calc(#{$card-stack-width} - 30px);
+$card-height: 200px;
+/* ***** Dimensions - End ***** */
+
+/* ***** Global Styles - Start ***** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: $black;
+  overflow: hidden;
+}
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%extra-cards {
+  position: absolute;
+  width: $card-width;
+  height: $card-height;
+  background-color: $light-black;
+  border-radius: 10px;
+}
+%card {
+  width: $card-width;
+  height: $card-height;
+  border-radius: 10px;
+}
+/* ***** Global Styles - End ***** */
+
+/* ***** Specific Styles - Start ***** */
+.container {
+  @extend %center;
+  height: 100vh;
+}
+.card-1 {
+  @extend %extra-cards;
+  top: 10px;
+  left: -200px;
+  transform: rotate(-20deg);
+}
+.card-2 {
+  @extend %extra-cards;
+  top: calc(#{$card-width} - 20px);
+  left: -120px;
+  transform: rotate(-20deg);
+}
+.card-3 {
+  @extend %extra-cards;
+  top: calc(#{$card-width} * 2 - 50px);
+  left: -35px;
+  transform: rotate(-20deg);
+}
+.card-4 {
+  @extend %extra-cards;
+  bottom: 10px;
+  right: -200px;
+  transform: rotate(-20deg);
+}
+.card-5 {
+  @extend %extra-cards;
+  bottom: calc(#{$card-width} - 20px);
+  right: -120px;
+  transform: rotate(-20deg);
+}
+.card-6 {
+  @extend %extra-cards;
+  bottom: calc(#{$card-width} * 2 - 50px);
+  right: -35px;
+  transform: rotate(-20deg);
+  overflow: hidden;
+}
+.card-stack {
+  display: flex;
+  justify-content: center;
+  width: $card-stack-width;
+  height: $card-stack-height;
+  background-color: $light-black;
+  border-radius: 20px;
+  transform: rotate(-20deg);
+  .balance {
+    position: absolute;
+    width: 100%;
+    margin-top: 230px;
+    margin-left: 40px;
+    font-size: 11px;
+    color: $white;
+    span {
+      font-size: 18px;
+    }
+  }
+}
+.swiper-container {
+  display: flex;
+  width: $card-width;
+  height: $card-height;
+  justify-content: center;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+.slide {
+  position: absolute;
+  @extend %card;
+  font-size: 18px;
+  padding: 20px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  .bank-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 12px;
+    span {
+      font-size: 10px;
+      color: grey;
+    }
+    img {
+      margin: -15px -10px 0 0;
+    }
+  }
+  img {
+    margin: 10px 0;
+  }
+  .card-number {
+    font-size: 15px;
+  }
+  .personal-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  &.slide-3 {
+    width: calc(#{$card-width} - 30px);
+    margin-top: -30px;
+    background: rgb(72, 111, 233);
+    z-index: 1;
+    color: $white;
+    span {
+      color: $white;
+      opacity: 0.5;
+    }
+  }
+  &.slide-2 {
+    width: calc(#{$card-width} - 15px);
+    background-color: $white;
+    z-index: 2;
+  }
+  &.slide-1 {
+    margin-top: -320px;
+    z-index: 3;
+    color: #fff;
+    background-color: $black;
+  }
+}
+/* ***** Specific Styles - End ***** */
+
+/* ***** Media Queries - Start ***** */
+@media screen and (max-width: 650px) {
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6 {
+    display: none;
+  }
+}
+/* ***** Media Queries - End ***** */
