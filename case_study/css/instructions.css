@@ -1,0 +1,172 @@
+body{
+    position: relative;
+}
+#detail_recipe_container{
+    position: absolute;
+    width: 100vw;
+    top: 3.5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    transition: .2s;
+
+}
+
+#detail_recipe_container *{
+    font-family: Garamond;
+}
+
+
+.img_tile_container{
+    display: flex;
+    width: 1000px;
+    max-width: 90vw;
+    justify-content: center;
+    max-height: 500px;
+}
+
+.img_tile_container img{
+    width: 63%;
+}
+
+
+.title_container{
+    background-color: #FAF6EE;
+    padding: 1rem;
+    position: relative;
+    width: 37%;
+
+}
+
+.featured{
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,-50%);
+    padding: 0 1rem;
+    background-color: #FAF6EE;
+    color: #B8992A;
+}
+
+.title_content_container{
+    padding: 1rem 2rem 2rem 2rem;
+    border: 2px solid #877226;
+    display: flex;
+    flex-direction: column ;
+    /* justify-content: space-around; */
+    height: 100%;
+    gap: 5%;
+    overflow: auto;
+}
+
+.title_content_container h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#detail_recipe_container .difficulty{
+    position: relative;
+    flex-flow: row wrap ;
+    font-size: 1rem;
+    bottom: 0rem;
+    width: 100%;
+    justify-content: space-around;
+    color: grey;
+}
+
+#detail_recipe_container .difficulty ul{
+    height: 1rem;
+    width: 8rem;
+    background-image: url(../img/difficulty_scale_dk.svg);
+}
+
+#detail_recipe_container .difficulty li{
+    height: .8rem;
+    width: .5rem;
+    list-style: none;
+    background-color: #B8992A;
+}
+
+
+#detail_recipe_container .total_time{
+    color: #727272;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: flex-end;
+}
+
+#detail_recipe_container .total_time img{
+    width: 1rem;
+    height: 1rem;
+    vertical-align: baseline;
+}
+
+.content_container{
+    width: 800px;
+    max-width: 80vw;
+    color: white;
+    margin: 3rem;
+}
+
+.content_container h1{
+    padding: 1rem 0 .5rem 0;
+    font-size: 2.25rem;
+}
+
+.content_container ul{
+    margin: 0;
+
+}
+
+.content_container li{
+    list-style: none;
+}
+
+.content_container ul, .content_container p{
+    font-size: 1.125rem;
+    padding: 0 2rem;
+}
+
+#bk_btn{
+    margin: 1.5rem 1.5rem 1.5rem 10vw;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.hidden{
+    opacity: 0%;
+    visibility: hidden;
+    transition: .25s;
+    transform: translateY(10vh);
+}
+
+@media screen and (max-width: 1300px) {
+    .img_tile_container{
+        flex-direction: column;
+        max-height: none;
+        width: auto;
+        height: auto;
+        max-width: none;
+        align-items: center;
+        margin: 0 10vw;
+    }
+
+    .img_tile_container img{
+        width: 100%;
+    }
+
+    .title_container{
+        width: 100%;
+        
+    }
+
+    .title_content_container{
+        gap: 1rem;
+    }
+    
+    .card_content{
+        height: 100%;
+        overflow: auto;
+    }
+}
